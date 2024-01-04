@@ -3,10 +3,10 @@ import Link from "next/link";
 import Logo from "./Logo";
 
 const footer_menu = [
-  { name: "Division", path: "#" },
-  { name: "Articles", path: "#" },
-  { name: "Gallery", path: "#" },
-  { name: "Contact", path: "#" },
+  { name: "Division", path: "/subteam" },
+  { name: "Achievement", path: "/achievements" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "Contact", path: "/contact" },
 ];
 
 export default function Footer() {
@@ -33,7 +33,7 @@ export default function Footer() {
             ))}
           </ul>
           <div>
-            <div className="text-xl font-semibold uppercase text-zinc-200">
+            <div className="font-header text-xl font-semibold uppercase text-zinc-200">
               Community <span className="text-yellow-600">partner</span>
             </div>
             <div className="mt-6 flex shrink-0 gap-4">

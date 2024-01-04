@@ -1,25 +1,25 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Logo from "~/components/Logo";
 import { MdClose, MdMenu } from "react-icons/md";
 import { Contact, Division, Hero, Gallery } from "~/components/home";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 const header_menu = [
-  { name: "Division", path: "#divisons" },
-  { name: "Articles", path: "#articles" },
-  { name: "Gallery", path: "#gallery" },
-  { name: "Contact", path: "#contact" },
+  { name: "Division", path: "/subteam" },
+  { name: "Achievement", path: "/achievements" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "Contact", path: "/contact" },
 ];
 
 function Heading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex justify-center">
-      <h2 className="heading-line text-center text-4xl font-bold uppercase text-sky-900">
+      <h2 className="heading-line font-header text-center text-4xl font-bold uppercase text-sky-900">
         {children}
       </h2>
     </div>
@@ -27,7 +27,7 @@ function Heading({ children }: { children: React.ReactNode }) {
 }
 
 export default function Home() {
-  const router = useRouter();
+  // const router = useRouter();
   const [menu, setMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -38,7 +38,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="relative z-0 bg-zinc-400 bg-[url(/noise.avif)] bg-blend-multiply">
       <header
         className={clsx(
           (scrolled || menu) &&
@@ -89,7 +89,7 @@ export default function Home() {
 
       <Hero />
 
-      <div className="mx-auto -mt-20 max-w-screen-xl space-y-32 rounded-t-3xl border bg-white py-16 shadow-xl">
+      <div className="container -mt-20 space-y-32 rounded-t-3xl border bg-zinc-200 py-16 shadow-xl">
         <div className="px-4" id="divisons">
           <Heading>
             <span className="text-black">Our</span> divisions
@@ -97,7 +97,7 @@ export default function Home() {
           <Division />
         </div>
 
-        <div className="px-4" id="articles">
+        {/* <div className="px-4" id="articles">
           <Heading>Articles</Heading>
           <div className="mt-16 grid gap-4 gap-y-10 md:grid-cols-2 md:gap-y-6 md:px-12 lg:grid-cols-3">
             {["A", "B", "C"].map((v) => (
@@ -132,7 +132,7 @@ export default function Home() {
           >
             Browse
           </button>
-        </div>
+        </div> */}
 
         <div className="px-2" id="gallery">
           <Heading>Gallery</Heading>
@@ -146,6 +146,6 @@ export default function Home() {
           <Contact />
         </div>
       </div>
-    </>
+    </div>
   );
 }

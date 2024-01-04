@@ -7,10 +7,10 @@ import { MdClose, MdMenu } from "react-icons/md";
 import clsx from "clsx";
 
 const header_menu = [
-  { name: "Division", path: "#divisons" },
-  { name: "Articles", path: "#articles" },
-  { name: "Gallery", path: "#gallery" },
-  { name: "Contact", path: "#contact" },
+  { name: "Division", path: "/subteam" },
+  { name: "Achivement", path: "/achievements" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "Contact", path: "/contact" },
 ];
 
 export default function Header() {

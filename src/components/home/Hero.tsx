@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="bg-hero flex min-h-[600px] items-center justify-start bg-blue-900 bg-[url('/banner.jpg')] bg-cover bg-center pb-32 bg-blend-multiply">
       <div className="mx-auto flex min-h-full w-full max-w-screen-xl flex-col items-center px-4 pt-32 lg:flex-row">
         <div className="order-2 md:px-12 lg:order-1">
-          <h1 className="text-4xl font-black uppercase text-white lg:text-6xl">
+          <h1 className="font-header text-4xl font-black uppercase text-white lg:text-6xl">
             Fly your dream!
           </h1>
           <p className="mt-4 text-sm text-white md:text-base lg:max-w-[60ch] lg:text-lg">

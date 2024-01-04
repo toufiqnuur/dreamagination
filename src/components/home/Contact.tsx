@@ -5,9 +5,9 @@ export default function Contact() {
     <div className="mt-16 grid grid-flow-row items-center gap-8 px-4 md:grid-cols-2 md:px-12">
       <div className="md:order-2">
         <iframe
-          className="mb-2 aspect-[4/3] w-full rounded-xl border-4 border-white shadow-xl"
+          className="aspect-[4/3] w-full rounded-xl border-4 border-white shadow-xl"
           loading="lazy"
-          title="SMK N 1 Seyegan"
+          title="Robotik UNY"
           src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Robotika+UNY&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
       </div>

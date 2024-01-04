@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Source_Sans_3, Teko } from "next/font/google";
 import "./globals.css";
 import Footer from "~/components/Footer";
+import clsx from "clsx";
 
-const inter = Inter({ subsets: ["latin"] });
+const teko = Teko({ subsets: ["latin"], variable: "--font-teko" });
+const sourceSans3 = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://google.com"),
@@ -24,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={clsx(sourceSans3.variable, teko.variable)}>
+      <body>
         {children}
         <Footer />
       </body>
