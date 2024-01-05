@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Logo from "~/components/Logo";
 import { MdClose, MdMenu } from "react-icons/md";
-import { Contact, Division, Hero, Gallery } from "~/components/home";
+import { Contact, Division, Gallery, Hero } from "~/components/home";
 // import { useRouter } from "next/navigation";
 
 const header_menu = [
@@ -33,7 +33,9 @@ export default function Home() {
 
   useEffect(() => {
     if (window) {
-      window.onscroll = () => setScrolled(!!window.scrollY);
+      window.addEventListener("scroll", () => setScrolled(!!window.scrollY), {
+        passive: true,
+      });
     }
   }, []);
 
