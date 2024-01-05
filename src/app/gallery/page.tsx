@@ -29,7 +29,7 @@ export default function Gallery() {
                 <div className="relative h-full w-full bg-zinc-100">
                   <Image
                     className="h-auto w-auto scale-110 transition-transform duration-200 ease-in-out group-hover:scale-100"
-                    src="/banner.jpg"
+                    src="/banner.avif"
                     fill
                     alt=""
                   />

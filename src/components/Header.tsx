@@ -25,9 +25,9 @@ export default function Header() {
           </Link>
           <button onClick={() => setMenu(!menu)}>
             {menu ? (
-              <MdClose size={32} ariaLabel="Close" />
+              <MdClose size={32} aria-label="Close" />
             ) : (
-              <MdMenu className="lg:hidden" size={32} ariaLabel="Menu" />
+              <MdMenu className="lg:hidden" size={32} aria-label="Menu" />
             )}
           </button>
         </div>

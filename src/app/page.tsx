@@ -57,12 +57,12 @@ export default function Home() {
             </Link>
             <button onClick={() => setMenu(!menu)}>
               {menu ? (
-                <MdClose size={32} ariaLabel="Close" />
+                <MdClose size={32} aria-label="Close" />
               ) : (
                 <MdMenu
                   className={clsx(!scrolled && "text-white", "lg:hidden")}
                   size={32}
-                  ariaLabel="Menu"
+                  aria-label="Menu"
                 />
               )}
             </button>
