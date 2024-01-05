@@ -42,7 +42,7 @@ const team_data = [
   },
   {
     path: "/azzawra",
-    icon: "/wekudhara.png",
+    icon: "/TD.png",
     name: "Az-Zawra Biantara",
     divison: "Technology Development",
     detail:

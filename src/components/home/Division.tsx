@@ -7,7 +7,7 @@ const divisions = [
   {
     name: "Technology Development",
     path: "/azzawra-biantara",
-    icon: "/wekudhara.png",
+    icon: "/TD.png",
   },
   { name: "V-TOL", path: "/werkudhara", icon: "/wekudhara.png" },
 ];
@@ -25,7 +25,7 @@ export default function Division() {
             <Image
               className="mx-auto transition-all delay-100 duration-300 ease-linear group-hover:scale-125"
               src={division.icon}
-              width={idx > 1 ? 150 : 100}
+              width={idx > 2 ? 150 : 100}
               height={100}
               alt=""
             />
