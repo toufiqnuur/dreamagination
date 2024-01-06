@@ -1,11 +1,15 @@
-// @ts-nocheck
+"use client";
+
 import "slick-carousel/slick/slick.css";
 import "./slider.css";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import Slider from "react-slick";
 import clsx from "clsx";
 
-function SlideArrow(props) {
+function SlideArrow(props: {
+  to: string;
+  onClick?: React.MouseEventHandler | undefined;
+}) {
   const { to, onClick } = props;
   return (
     <div
@@ -35,7 +39,7 @@ export default function SimpleSlider() {
     slidesToScroll: 3,
     prevArrow: <SlideArrow to="prev" />,
     nextArrow: <SlideArrow to="next" />,
-    appendDots: (dots) => (
+    appendDots: (dots: React.ReactNode) => (
       <>
         <ul className="mt-4 flex justify-center gap-4"> {dots} </ul>
       </>
