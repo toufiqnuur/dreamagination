@@ -1,22 +1,15 @@
 import { GrContact } from "react-icons/gr";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import PageHeader from "~/components/PageHeader";
 
 export default function Contact() {
   return (
     <>
-      <div className="bg-gradient-to-br from-zinc-950 to-zinc-950 text-zinc-300">
-        <div className="container px-4 py-12">
-          <GrContact size={72} />
-          <div className="mt-6">
-            <h1 className="font-header text-6xl font-bold uppercase text-zinc-300">
-              Contact us
-            </h1>
-            <div className="font-header text-xl font-medium uppercase text-yellow-600">
-              Dreamagination - Aerialroboticteam
-            </div>
-          </div>
-        </div>
-      </div>
+      <PageHeader
+        icon={<GrContact size={72} />}
+        title="Contact Us"
+        subtitle="Dreamagination - Aerialroboticteam"
+      />
 
       <div className="bg-zinc-600 bg-[url(/noise.avif)] py-12 bg-blend-multiply">
         <div className="container border border-zinc-500 px-4 py-12 backdrop-blur lg:rounded-3xl">

@@ -1,22 +1,15 @@
 import Image from "next/image";
 import { PiGooglePhotosLogo } from "react-icons/pi";
+import PageHeader from "~/components/PageHeader";
 
 export default function Gallery() {
   return (
     <>
-      <div className="bg-gradient-to-br from-zinc-950 to-zinc-950 text-zinc-300">
-        <div className="container px-4 py-12">
-          <PiGooglePhotosLogo size={72} />
-          <div className="mt-6">
-            <h1 className="font-header text-6xl font-bold uppercase text-zinc-300">
-              Gallery
-            </h1>
-            <div className="font-header text-xl font-medium uppercase text-yellow-600">
-              Dreamagination - Photo collections
-            </div>
-          </div>
-        </div>
-      </div>
+      <PageHeader
+        icon={<PiGooglePhotosLogo size={72} />}
+        title="Gallery"
+        subtitle="Dreamagination - Photo collections"
+      />
 
       <div className="bg-zinc-600 bg-[url(/noise.avif)] py-12 bg-blend-multiply">
         <div className="container px-4 py-12">

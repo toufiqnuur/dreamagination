@@ -1,4 +1,4 @@
-import Header from "~/components/Header";
+import { Header } from "~/components/home";
 
 export default function SubteamLayout({
   children,

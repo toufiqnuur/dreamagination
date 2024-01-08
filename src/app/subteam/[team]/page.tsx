@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "~/components/Header";
+import PageHeader from "~/components/PageHeader";
 
 function RoleHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -68,27 +69,21 @@ export default function Subteam({ params }: { params: { team: string } }) {
     },
   ];
 
+  const TeamIcon = (
+    <div className="relative h-32 w-32">
+      <Image className="drop-shadow-white" src="/RJ.png" fill alt="" />
+    </div>
+  );
+
   return (
     <>
-      <div className="bg-gradient-to-br from-zinc-950 to-zinc-950 text-zinc-300">
-        <div className="container px-4 py-12">
-          <div className="relative h-32 w-32">
-            <Image className="drop-shadow-white" src="/RJ.png" fill alt="" />
-          </div>
-          <div className="mt-6">
-            <h1 className="font-header text-6xl font-bold uppercase text-zinc-300">
-              Rejetion
-            </h1>
-            <div className="font-header text-xl font-medium uppercase text-yellow-600">
-              Racing plane divison
-            </div>
-            <div className="mt-4 lg:text-lg">
-              Berkonsentrasi pada misi Fast and On Track yaitu cepat dan tetap
-              pada lintasan secara autonomus dan manual.
-            </div>
-          </div>
-        </div>
-      </div>
+      <PageHeader
+        icon={TeamIcon}
+        title="Rejetion"
+        subtitle="Racing plane divison"
+        description="Berkonsentrasi pada misi Fast and On Track yaitu cepat dan tetap
+              pada lintasan secara autonomus dan manual."
+      />
 
       <div className="bg-zinc-600 bg-[url(/noise.avif)] bg-blend-multiply">
         <div className="container space-y-10 px-4 py-12">

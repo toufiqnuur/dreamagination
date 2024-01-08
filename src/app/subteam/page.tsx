@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BiSolidCategory } from "react-icons/bi";
+import PageHeader from "~/components/PageHeader";
 
 function TeamCard({
   href,
@@ -61,25 +62,15 @@ const team_data = [
 export default function Subteam() {
   return (
     <>
-      <div className="bg-gradient-to-br from-zinc-950 to-zinc-950 text-zinc-300">
-        <div className="container px-4 py-12">
-          <BiSolidCategory size={72} />
-          <div className="mt-6">
-            <h1 className="font-header text-6xl font-bold uppercase text-zinc-300">
-              Subteam
-            </h1>
-            <div className="font-header text-xl font-medium uppercase text-yellow-600">
-              Dreamagination - Divison
-            </div>
-            <div>
-              Dreamagination adalah Tim Robot Terbang Divisi Robotika UKM
+      <PageHeader
+        icon={<BiSolidCategory size={72} />}
+        title="Subteam"
+        subtitle="Dreamagination - Divison"
+        description="Dreamagination adalah Tim Robot Terbang Divisi Robotika UKM
               Rekayasa Teknologi UNY yang berfokus kepada riset tentang wahana
               UAV (Unmanned Aerial Vehicle) atau pesawat tanpa awak. Terdiri
-              dari 4 divisi dan berdiri sejak tahun 2015 hingga sekarang.
-            </div>
-          </div>
-        </div>
-      </div>
+              dari 4 divisi dan berdiri sejak tahun 2015 hingga sekarang."
+      />
 
       <div className="bg-zinc-600 bg-[url(/noise.avif)] bg-blend-multiply">
         <div className="container px-4 py-12 lg:px-48">
